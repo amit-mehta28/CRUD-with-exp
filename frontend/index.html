@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud !!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1360px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .main_heading {
+            font-size: 26px;
+            font-weight: 500;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .form {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .fields {
+            padding: 30px 24px;
+        }
+
+        .form_input {
+            display: block;
+            margin-bottom: 15px;
+            padding: 8px;
+            outline: none;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        .form_input:last-child {
+            margin-bottom: 0px;
+        }
+
+        .sbmt_btn,
+        .reset_btn {
+            padding: 6px 20px;
+            border-radius: 5px;
+        }
+
+        .local_data_box {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .data_headings {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 20px;
+            padding: 0 0 16px 10px;
+            border-bottom: 2px solid rgb(192, 162, 162);
+        }
+
+        .data_item {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main_heading">CRUD Operation in JS !!</h1>
+        <form class="form">
+            <fieldset class="fields">
+                <legend>Form !!</legend>
+                <input class="form_input user_name" type="text" placeholder="Name">
+                <input class="form_input job" type="text" placeholder="Job">
+                <input class="form_input experience" type="text" placeholder="Experience">
+                <input class="form_input package" type="text" placeholder="Package">
+                <button class="sbmt_btn" type="submit">Submit</button>
+                <button class="reset_btn">Reset</button>
+            </fieldset>
+        </form>
+        <!-- <div class="local_data_box">
+            <fieldset class="fields">
+                <legend>Data from Local Storage !!</legend>
+                <ul class="data_headings">
+                    <li class="data_item">Name</li>
+                    <li class="data_item">Job</li>
+                    <li class="data_item">Experience</li>
+                    <li class="data_item">Package</li>
+                    <li class="data_item">Actions</li>
+                </ul>
+            </fieldset>
+        </div> -->
+    </div>
+</body>
+</html>
