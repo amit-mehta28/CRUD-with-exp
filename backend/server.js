@@ -6,7 +6,6 @@ const port = 9000;
 app.use(cors("*"));
 app.use(express.json());
 
-
 let arrayDatas = [];
 
 app.get("/showData", (req, res) => {
